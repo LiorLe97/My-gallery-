@@ -6,7 +6,7 @@ function init(){
     createProjects();
     renderProjects();
 }
-
+$('.submit-button').click(submitEmail)
 
 function renderProjects(){
 var strHTML = gProjects.map(function(project){
@@ -56,4 +56,12 @@ function renderModal(project){
     </div>
   </div>`;
   $('.for-modal').html(strHTML);
+}
+
+
+function submitEmail(){
+  var email = document.querySelector('[name=email]').value;
+  var subject = document.querySelector('[name=subject]').value;
+  var message = document.querySelector('[name=msg-body]').value;
+  window.location.replace(`https://mail.google.com/mail/u/0/?fs=1&to=me@example.com&su=${subject}&body=${message}&bcc=${email}.com&tf=cm`)
 }
