@@ -47,12 +47,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-    background: #fed136;
+    background: rgb(185, 183, 183);
     text-shadow: none;
 }
 
 ::selection {
-    background: #fed136;
+    background: rgb(185, 183, 183);
     text-shadow: none;
 }
 
@@ -65,7 +65,7 @@ img::-moz-selection {
 }
 
 body {
-    -webkit-tap-highlight-color: #fed136;
+    -webkit-tap-highlight-color: rgb(185, 183, 183);
 }
 
 .offcanvas-btn {
